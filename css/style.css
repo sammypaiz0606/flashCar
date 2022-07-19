@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    /* background:#000; */
+}
+#container {
+    width:1020px;
+    height:800px;
+    background:orange;
+    text-align:center;
+    margin:0 auto;
+    padding:0;
+}
+
+#inputs {
+    padding:20px;
+}
+input {
+    background:#fff;
+    height:20px;
+}
+#submit {
+    background: green;
+    padding:5px;
+    border-radius:5px;
+    margin-left:10px;
+}
+.input {
+    background:#ddd;
+    width:200px;
+    height:30px;
+} 
+
+@media only screen and (max-width:600px) {
+    #container {
+        width:500px;
+    }
+}
