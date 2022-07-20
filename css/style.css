@@ -1,105 +1,124 @@
 * {
-    box-sizing: border-box;
     margin:0;
     padding:0;
-    /* background:#000; */
+
+
+} .clear {
+    clear:both;
+}
+body {
+    background:#000;
 }
 #container {
-    width:1020px;
+    color:#fff;
+    width:800px;
     height:800px;
-    background:rgba(0, 0, 0, 1);
     text-align:center;
     margin:0 auto;
     padding:0;
 }
 #wrapper {
-    width:820px;
+    width:680px;
+    height:600px;
     margin:0 auto;
     text-align:center;
-    background:orange;
 }
-.flashCar {
-    margin-top:20px;
+#topBar {
+    padding-top:10px;
+}
+#login {
+    width:680px;
+    height:60px;
+    margin-top:-10px;
     padding:0;
-    color:#fff;
-}
-.inputTitles {
-    color:#fff;
-    font-size:1.5rem;
-    position:relative;
-    right:-30px;
-    top:10px;
-    margin-right:0;
-}
-.inputs .inputTitles {
-    margin-top:25px;
-    margin-right:40px;
-    list-style:none;
-}
- #License {
-   margin-top:10px;
-}
-.inputDiv {
-    width:500px;
-    margin-top:20px;
-    margin-right:10px;
-}
-.inputs {
-   float:left;
-
-}
-.inputs li {
-    list-style:none;
-}
-.input {
-    width:100%;
-    height:35px;
-    /* background:rgba(221, 221, 221, 0.1); */
-    border:none;
-    border-bottom:1px solid #fff;
-}
-.pInput {
-    font-size:1.5rem;
-    color:#fff;
-  
-}
-
-button {
-    width:60%;
-    height:50px;
-    background: green;
-    padding:5px;
-    border-radius:5px;
-    cursor:pointer;
-    margin:20px;
-}
-/* .input {
-    background:#ddd;
-    width:200px;
-    height:30px;
-}  */
-
-@media only screen and (max-width:600px) {
-    #container {
-        width:500px;
-    }
-    .input {
-        width:80%;
-        margin:0px;
-
-    }
-    #inputModel {
-        margin-left:-2px;
-    }
-    #submitDiv {
-        position:relative;
-        top:-20px;
-
-    }
-    button {
-        width:90%;
-
-
-    }
+    background:#132D13;
     
+}
+#login p{
+    padding-top:30px;
+    font-size:1.2rem;
+}
+#support {
+    float:left;
+}
+#supportBtn {
+    color:red;
+    border: 1px solid red;
+    background:#000;
+    font-size:1rem;
+    font-weight:normal;
+    padding:5px;
+    margin:12px 200px 0 0;
+
+}
+#flashCar {
+    float:left;
+    margin-top:5px;
+}
+#titleFlashCar {
+    font-weight:normal;
+
+}
+#versionNumber {
+    font-weight:normal;
+    text-align:right;
+}
+.middle {
+    margin:0 auto;
+    padding:0;
+    width:680px;
+
+}
+.middleText {
+    margin-top:-10px;
+    padding:0;
+    float:left;
+}
+.middleText  ul li {
+    list-style:none;
+    text-align:left;
+    margin:13px 0;
+    font-weight:normal;
+    font-size:1.1rem;
+}
+.middleInput {
+    float:right;
+    
+}
+ .middleLogin {
+     margin-top:-10px;
+}
+.middleLI {
+    margin:10px 0;
+}
+#middleInput {
+    width:400px;
+    height:20px;
+    border:1px solid #fff;
+    background:none;
+    padding-left:5px;
+} 
+#loginBtn {
+    margin:0 auto;
+    padding:0;
+    width:680px;
+    border:1px solid #fff;
+}
+#loginBtn #button_1 {
+    padding:10px 0;
+    background:rgba(38, 38, 38, 01);
+}
+.para1 p {
+    margin:0;
+    padding-top:5px;
+    font-size: 28px;
+    text-align:left;
+}
+.para1 ol {
+    margin-left:25px;
+}
+.para1 li {
+    text-align:left;
+    font-size:28px;
+    margin:20px 0;
 }

@@ -37,55 +37,64 @@
 
 <body>
     <div id="container">
-        <div class="flashCar">
-            <h1>FlashCar</h1>
-        </div>
+        <div id="wrapper">
+            <div id="topBar">
+                <div id="login">
+                    <p>Login</p>
+                </div>
 
-       <div id="wrapper">
-            <div class="inputs">
-                <ul id="titleInputs">
-                    <li class="inputTitles">Car:</li>
-                    <li class="inputTitles">Model:</li>
-                    <li class="inputTitles">Color:</li>
-                    <li class="inputTitles">Year:</li>
-                    <li class="inputTitles" id="license">License Plate:</li>
-                </ul>
+                <div id="support">
+                    <button id="supportBtn">Support</button>
+                </div>
+                <div id="flashCar">
+                    <h1 id="titleFlashCar">Flash Car</h1>
+                </div>
+                <div id="version">
+                    <h3 id="versionNumber">2.9.1.0</h3>
+                </div>
             </div>
-            <div class="inputs">
-                <ul>
-                    <li>
-                        <div class='inputDiv' id="inputCarDiv">
-                            <input type="text" class='input' id="inputCar" />
-                        </div>
-                    </li>
-                    <li>
-                        <div class='inputDiv' id="inputYearDiv">
-                            <input type="text" class='input' id="inputYear" />
-                        </div>
-                    </li>
-                    <li>
-                        <div class='inputDiv' id="inputColorDiv">
-                            <input type="text" class='input' id="inputColor" />
-                        </div> 
-                    </li>
-                    <li>
-                        <div class='inputDiv' id="inputYearDiv">
-                            <input type="text" class='input' id="inputYear" />
-                        </div> 
-                    </li>
-                    <li>
-                        <div class='inputDiv' id="inputLicenseDiv">
-                            <input type="text" class='input' id="inputLicense" />
-                        </div> 
-                    </li>
-                </ul>
+
+            <br /><br />
+
+            <div class="middle">
+                <div class="middleText">
+                    <ul>
+                        <li>Email Address</li>
+                        <li>Password</li>
+                    </ul>
+                </div>
             </div>
-       </div>
-          <br /><br />     
-        <div class="submit" id="submitDiv">
-            <button>Submit</button>
+
+            <div class="middleInput">
+                <div class="middleLogin">
+                    <div class="middleLI">
+                        <input type="text" id='middleInput' placeholder='Enter your Email Address'/>
+                    </div>
+                    <div class="middleLI">
+                        <input type="text"  id='middleInput' placeholder='Enter your password'/>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="loginBtn">
+                <div id="button_1">Login</div>
+            </div>
+            <div class="para1">
+                <p>Don't have a password? Follow these 3 easy steps:</p>
+                
+                <ol>
+                    <li>Enter the mail address you previously registered<br />
+                        with your valet parking company (only that email will work).</li>
+                    <li>Leave the Password field blank/empty.</li>
+                    <li>Click the LOGIN button and a token will be emailed <br />
+                        to you to allow you to set your password on the next screen.</li>
+                </ol>
+            </div>
+            <div class="clear"></div>
+            <div id="loginBtn">
+                <div id="button_1">Lost your password</div>
+            </div>
         </div>
-      
     </div>
     <!-- LATEST JQUERY -->
     <script src="assets/js/jquery.min.js"></script>
