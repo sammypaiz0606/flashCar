@@ -122,3 +122,42 @@ body {
     font-size:28px;
     margin:20px 0;
 }
+
+@media only screen and (max-width:600px) {
+    #wrapper, #container,#login {
+        width:400px;
+    }
+    #supportBtn {
+        font-size:0.7rem;
+        margin:12px 90px 0 0;
+
+    }
+    #titleFlashCar {
+        font-size:1.8em;
+    }
+    #versionNumber {
+        font-size:1rem;
+        margin-top:10px;
+    }
+    .middle {
+        width:400px;
+    }
+    .middleText ul li {
+        font-size: 1rem;
+    }
+    #middleInput {
+        width:250px;
+    }
+    #loginBtn {
+        width:400px;
+    }
+    .para1 p {
+        font-size:1.2rem;
+    }
+    .para1 ol {
+        margin-left:15px;
+    }
+    .para1 li {
+        font-size:1.1rem;
+    }
+}
