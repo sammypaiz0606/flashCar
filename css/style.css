@@ -12,7 +12,6 @@ body {
 #container {
     color:#fff;
     width:800px;
-    height:800px;
     text-align:center;
     margin:0 auto;
     padding:0;
@@ -120,12 +119,12 @@ body {
 .para1 li {
     text-align:left;
     font-size:28px;
-    margin:20px 0;
+    margin:10px 0;
 }
 
 @media only screen and (max-width:600px) {
     #wrapper, #container,#login {
-        width:400px;
+        width:380px;
     }
     #supportBtn {
         font-size:0.7rem;
@@ -140,24 +139,25 @@ body {
         margin-top:10px;
     }
     .middle {
-        width:400px;
+        width:380px;
     }
     .middleText ul li {
         font-size: 1rem;
     }
     #middleInput {
         width:250px;
+        height:25px;
     }
     #loginBtn {
-        width:400px;
+        width:380px;
     }
     .para1 p {
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
     .para1 ol {
         margin-left:15px;
     }
-    .para1 li {
-        font-size:1.1rem;
+    .para1 ol li {
+        font-size:0.9rem;
     }
 }
