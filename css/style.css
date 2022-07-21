@@ -17,23 +17,21 @@ body {
     padding:0;
 }
 #wrapper {
-    width:680px;
-    height:600px;
+    width:650px;
     margin:0 auto;
     text-align:center;
 }
-#topBar {
+.topBar1, .topBar2 {
     padding-top:10px;
-}
-#login {
-    width:680px;
+}.login {
+    width:650px;
     height:60px;
     margin-top:-10px;
     padding:0;
     background:#132D13;
     
 }
-#login p{
+.login p{
     padding-top:30px;
     font-size:1.2rem;
 }
@@ -50,22 +48,22 @@ body {
     margin:12px 200px 0 0;
 
 }
-#flashCar {
+.flashCar {
     float:left;
     margin-top:5px;
 }
-#titleFlashCar {
+.titleFlashCar {
     font-weight:normal;
 
 }
-#versionNumber {
+.versionNumber {
     font-weight:normal;
     text-align:right;
 }
 .middle {
     margin:0 auto;
     padding:0;
-    width:680px;
+    width:650px;
 
 }
 .middleText {
@@ -80,37 +78,71 @@ body {
     font-weight:normal;
     font-size:1.1rem;
 }
-.middleInput {
-    float:right;
-    
-}
+
  .middleLogin {
      margin-top:-10px;
 }
 .middleLI {
     margin:10px 0;
 }
-#middleInput {
+.middleInput {
     width:400px;
-    height:20px;
+    height:30px;
     border:1px solid #fff;
     background:none;
     padding-left:5px;
-} 
-#loginBtn {
+    float:right;
+}
+ .loginBtn {
     margin:0 auto;
     padding:0;
-    width:680px;
+    width:648px;
     border:1px solid #fff;
+    cursor:pointer;
 }
-#loginBtn #button_1 {
+.button_1, .button_2, .button_3 {
     padding:10px 0;
     background:rgba(38, 38, 38, 01);
+    cursor:pointer;
+}
+
+.topBar2 {
+    width:650px;
+    height:60px;
+    margin-top:-14px;
+    padding:0;
+    background:#132D13;
+    
+}
+
+.loginClick1 {
+    width:230px;
+    background:rgba(38, 38, 38, 01);
+    margin-left:200px;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+    position:absolute;
+}
+.loginClick1 h4 {
+    padding:10px;
+
+}
+.loginClick1 p {
+    font-size:0.9rem;
+    padding-bottom:10px;
+}
+.loginClick1 #ok {
+    border-top:1px solid #fff;
+}
+.para1 {
+    position: relative;
+    z-index:-1;
 }
 .para1 p {
     margin:0;
     padding-top:5px;
-    font-size: 28px;
+    font-size: 1.7rem;
     text-align:left;
 }
 .para1 ol {
@@ -118,12 +150,62 @@ body {
 }
 .para1 li {
     text-align:left;
-    font-size:28px;
+    font-size:1.2rem;
     margin:10px 0;
 }
+.lostWrap {
+    width:680px;
+}
+.lostEmail {
+    width:0;
+    height:600px;
+    background:#000;
+    position:relative;
+    top:-460px;
+    /* margin-top:-400px; */
+    display: none;
+    overflow:hidden;
+    transition:width 1s;
+    float:right;
+}
+.lostTitle {
+    text-align:center;
+}
+.lostTitle h2 {
+    padding-top:30px;
+    
+}
+#version2 {
+    float:right;
+    margin-top:-30px;
+    font-size:normal;
+}
+.lostEmailAddress li {
+    float:left;
+    margin-top:5px;
+    font-size:1.5rem;
+}
+.lostInput {
+    margin-right:235px;
+}
+.lostInput input {
+    float:left;
+    width:375px;
+    height:30px;
+    background:none;
+    border:1px solid #fff;
+    position:absolute;
+    padding-left:10px;
+
+}
+.lostBtn .button_3 {
+    border:1px solid #fff;
+    margin-top:-15px;
+}
+
 
 @media only screen and (max-width:600px) {
-    #wrapper, #container,#login {
+    #wrapper, #container, .login {
         width:380px;
     }
     #supportBtn {
@@ -131,10 +213,10 @@ body {
         margin:12px 90px 0 0;
 
     }
-    #titleFlashCar {
+    .titleFlashCar {
         font-size:1.8em;
     }
-    #versionNumber {
+    .versionNumber {
         font-size:1rem;
         margin-top:10px;
     }
@@ -144,12 +226,17 @@ body {
     .middleText ul li {
         font-size: 1rem;
     }
-    #middleInput {
+    .middleInput {
         width:250px;
         height:25px;
     }
-    #loginBtn {
+
+    .loginBtn {
         width:380px;
+    }
+    .loginClick1 {
+        width:210px;
+        margin-left:70px;
     }
     .para1 p {
         font-size:1.1rem;
@@ -160,4 +247,47 @@ body {
     .para1 ol li {
         font-size:0.9rem;
     }
+    .lostEmail p {
+        font-size:1rem;
+        margin-top:5px;
+    }
+    #lostInput {
+        width:250px;
+        height:25px;
+
+    }
+    .lostBtn3 {
+        width:380px;
+        height:25px;
+        border:1px solid #fff;
+        cursor:pointer;
+    }
+    #topBar2 {
+        width:380px;
+    }
+    .lostEmail {
+        width:380px;
+        position:relative;
+        top:-430px;
+    }
+    .lostTitle {
+        margin-right:300px;
+    }
+    #version2 {
+        margin-right:300px;
+    }
+   
+    .lostEmailAddress li {
+        font-size:1.1rem;
+    }
+    .lostInput {
+        margin-right:490px;
+    }
+    .lostInput input {
+        width:225px;
+    }
+    .lostBtn .button_3 {
+        width:380px;
+    }
+ 
 }
