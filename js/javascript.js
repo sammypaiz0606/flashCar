@@ -24,14 +24,14 @@ loginClick1.addEventListener('click', () => {
 let lostEmail = document.querySelector('.lostEmail');
 
 loginBtn2.addEventListener('click', () => {
-    lostEmail.style.width = '100%';
+    // lostEmail.style.width = '375px';
     lostEmail.style.display = 'block';
     console.log('it workd!');
 
 });
 
 loginBtn3.addEventListener('click', () => {
-    lostEmail.style.width = '0';
+    // lostEmail.style.width = '0';
     lostEmail.style.display = 'none';
 
 });
