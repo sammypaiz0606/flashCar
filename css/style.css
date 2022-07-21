@@ -61,40 +61,42 @@ body {
     text-align:right;
 }
 .middle {
-    margin:0 auto;
+    margin-top:10px;
     padding:0;
     width:650px;
 
 }
 .middleText {
-    margin-top:-10px;
+    margin-top:15px;
     padding:0;
     float:left;
 }
 .middleText  ul li {
     list-style:none;
     text-align:left;
-    margin:13px 0;
+    margin:5px 0;
     font-weight:normal;
     font-size:1.1rem;
 }
 
  .middleLogin {
-     margin-top:-10px;
+     margin-top:15px;
 }
 .middleLI {
-    margin:10px 0;
+    margin-top:-20px;
 }
 .middleInput {
     width:400px;
     height:30px;
-    border:1px solid #fff;
     background:none;
     padding-left:5px;
     float:right;
+    margin-top:8px;
+
+    
 }
  .loginBtn {
-    margin:0 auto;
+    margin-top:15px;
     padding:0;
     width:648px;
     border:1px solid #fff;
@@ -155,14 +157,14 @@ body {
 }
 .lostWrap {
     width:680px;
+    position:relative;
+    top:-500px;
 }
 .lostEmail {
     width:680px;
     height:500px;
     background:#000;
-    position:relative;
-    top:-460px;
-    /* margin-top:-400px; */
+   
     display: none;
     overflow:hidden;
     float:right;
@@ -205,7 +207,7 @@ body {
 
 @media only screen and (max-width:600px) {
     #wrapper, #container, .login {
-        width:375px;
+        width:370px;
     }
     #supportBtn {
         font-size:0.7rem;
@@ -220,7 +222,7 @@ body {
         margin-top:10px;
     }
     .middle {
-        width:375px;
+        width:370px;
     }
     .middleText ul li {
         font-size: 1rem;
@@ -231,11 +233,11 @@ body {
     }
 
     .loginBtn {
-        width:375px;
+        width:370px;
     }
     .loginClick1 {
         width:210px;
-        /* margin-left:70px; */
+        margin-left:70px;
     }
     .para1 p {
         font-size:1.1rem;
@@ -256,7 +258,7 @@ body {
 
     }
     .lostBtn3 {
-        width:375px;
+        width:370px;
         height:25px;
         border:1px solid #fff;
         cursor:pointer;
@@ -265,31 +267,32 @@ body {
         width:375px;
     }
     .lostEmail {
-        width:377px;
+        width:370px;
         position:relative;
-        top:-430px;
+        top:30px;
         right:303px;
         padding-top:10px;
     }
     .lostTitle {
     }
     #version2 {
+        margin-right:5px;
     }
    
     .lostEmailAddress li {
         font-size:1.1rem;
     }
     .lostInput {
-        margin-right:200px;
+        margin-right:180px;
     }
     .lostInput input {
-        width:225px;
+        width:220px;
     }
     .lostBtn {
         width:3
     }
     .lostBtn .button_3 {
-        width:375px;
+        width:365px;
         
     }
  
