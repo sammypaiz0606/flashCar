@@ -221,7 +221,7 @@ body {
         margin-top:10px;
     }
     .middle {
-        width:380px;
+        width:375px;
     }
     .middleText ul li {
         font-size: 1rem;
@@ -232,7 +232,7 @@ body {
     }
 
     .loginBtn {
-        width:380px;
+        width:375px;
     }
     .loginClick1 {
         width:210px;
@@ -257,18 +257,19 @@ body {
 
     }
     .lostBtn3 {
-        width:380px;
+        width:375px;
         height:25px;
         border:1px solid #fff;
         cursor:pointer;
     }
     #topBar2 {
-        width:380px;
+        width:375px;
     }
     .lostEmail {
-        width:380px;
+        width:375px;
         position:relative;
         top:-430px;
+        padding-top:10px;
     }
     .lostTitle {
         margin-right:300px;
