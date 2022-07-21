@@ -207,7 +207,7 @@ body {
 
 @media only screen and (max-width:600px) {
     #wrapper, #container, .login {
-        width:370px;
+        width:375px;
     }
     #supportBtn {
         font-size:0.7rem;
@@ -267,23 +267,26 @@ body {
         width:375px;
     }
     .lostEmail {
-        width:370px;
+        width:380px;
         position:relative;
         top:30px;
         right:303px;
         padding-top:10px;
     }
     .lostTitle {
+        margin-right:5px;
     }
     #version2 {
-        margin-right:5px;
+        margin-right:20px;
+
     }
    
     .lostEmailAddress li {
         font-size:1.1rem;
+        margin-left:1px;
     }
     .lostInput {
-        margin-right:180px;
+        margin-right:200px;
     }
     .lostInput input {
         width:220px;
@@ -292,7 +295,8 @@ body {
         width:3
     }
     .lostBtn .button_3 {
-        width:365px;
+        width:360px;
+        margin-left
         
     }
  
