@@ -36,102 +36,80 @@
 </head>
 
 <body>
+  
     <div id="container">
         <div id="wrapper">
 
-            <div class="topBar1">
-                <div class="login">
-                    <p>Login</p>
+            <div class="sections">
+                <div id="login">
+                    <h3>Login</h3>
                 </div>
-
-                <div id="support">
-                    <button id="supportBtn">Support</button>
+                <br />
+               
+                <div class="supFlashNum">
+                    <ul>
+                        <li id="support">Support</li>
+                        <li id="title">Flash Car</li>
+                        <li id="numbers">2.9.1.0</li>
+                    </ul>
                 </div>
-                <div class="flashCar">
-                    <h1 class="titleFlashCar">Flash Car</h1>
-                </div>
-                <div id="version">
-                    <h3 class="versionNumber">2.9.1.0</h3>
-                </div>
-            </div>
-
-            <br /><br />
-
-            <div class="middle">
-                <div class="middleText">
+                <br />
+                <div class="loginContext">
                     <ul>
                         <li>Email Address</li>
                         <li>Password</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="middleInput">
-                <div class="middleLogin">
-                    <div class="middleLI">
-                        <input type="text" class='middleInput' placeholder='Enter your Email Address'/>
-                    </div>
-                    <div class="middleLI">
-                        <input type="text"  class='middleInput' placeholder='Enter your password'/>
-                    </div>
+                <div class="loginInput">
+                    <ul>
+                        <li><input type='text' placeholder='Enter your email address' /></li>
+                        <li><input type='text' placeholder='Enter your password' /></li>
+                    </ul>
                 </div>
             </div>
-            <div class="clear"></div>
-            <div class="loginBtn">
-                <div class="button_1">Login</div>
-            </div>
-            <div class="loginClick1">
-                <h4>Flash Car</h4>
-                <p>Your email address or password <br />
-                    appear to be incorrect. Please try<br/>
-                    again</p>
-                    <h4 id="ok">OK</h4>
-            </div>
-            <div class="para1">
-                <p>Don't have a password? Follow these 3 easy steps:</p>
-                
-                <ol>
-                    <li> Enter the mail address you previously registered<br />
-                        with your valet parking company (only that email will work).</li>
-                    <li> Leave the Password field blank/empty.</li>
-                    <li> Click the LOGIN button and a token will be emailed <br />
-                        to you to allow you to set your password on the next screen.</li>
-                </ol>
-            </div>  
-            <div class="clear"></div>
-
-                <div class="loginBtn">
-                    <div class="button_2">Lost your password?</div>
-                </div> 
-
-                <div class="lostWrap">
-                    <div class='lostEmail'>
-                        <div class="lostTitle">
-                            <h2>Flash Car</h2>
-                        </div>
-                        <div id="version2">
-                            <h3 class="versionNumber2">2.9.1.0</h3>
-                        </div>
-                        <br /><br />
-                        <div class="lostEmailAddress">
-                            <ul>
-                                <li>Email Address</li>
-                            </ul>
-                        </div>
-                        <div class="lostInput">
-                            <input type="text" id="'lostInput" placeholder='Enter your email address'/>
-                        </div>
-                        <br /><br /><br />
-                        <div class="lostBtn">
-                            <div class="button_3">Send Password Reset Token</div>
-                        </div>
-                    </div>
+            <!-------------------Button-------------->
+            <div class="button lostBtn1">
+                <div>Login</div>
+            </div> 
+            <!------------------Login---------------->
+            <div class="Sections">
+                <div class="para1">
+                    <p>Don't have a password? Follow these 3 easy steps:</p>
+                    
+                    <ol>
+                        <li> Enter the mail address you previously registered<br />
+                            with your valet parking company (only that email will work).</li>
+                        <li> Leave the Password field blank/empty.</li>
+                        <li> Click the LOGIN button and a token will be emailed <br />
+                            to you to allow you to set your password on the next screen.</li>
+                    </ol>
                 </div>
+                <div class="button lostBtn2">
+                    <div>Lost your password?</div>
+                </div>
+            </div>
 
-              
-                
-           
-            
+            <!----------------------------section 2 Lost Email--------->
+            <div class="sections lostEM_2">
+                    <div id="titleEmail">
+                        <ul>
+                            <li><h2>Flash Car</h2></li>
+                            <li id="numbers2">2.9.1.0</li>
+                        </ul>
+                    </div>
+                    <div id="lostEmail">
+                        <ul>
+                            <li id="lostEmAdd">Email Address</li>
+                            <li id="input"><input type='text' placeholder='Enter your email address' /></li>
+                        </ul>
+                    </div>
+
+                    <br /><br />
+                    <!--------------Button---------------->
+                    <div class="button lostBtn3">
+                        <div>Send Password Reset Token</div>
+                    </div>
+            </div>
         </div>
     </div>
     <!-- LATEST JQUERY -->
@@ -155,4 +133,4 @@
     <script src="js/javascript.js"></script>
 </body>
 
-</html> -->
+</html> 

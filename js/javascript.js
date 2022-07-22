@@ -1,37 +1,14 @@
-let loginBtn1   = document.querySelector('.button_1');
-let loginBtn2   = document.querySelector('.button_2');
-let loginBtn3   = document.querySelector('.button_3');
+let lostEM_2 = document.querySelector('.lostEM_2');
 
+let lostBtn2 = document.querySelector('.lostBtn2');
+let lostBtn3 = document.querySelector('.lostBtn3');
 
-let slideLeft   = document.querySelector('slideLeft');
-
-
-let loginClick1 = document.querySelector('.loginClick1');
-let loginClick2 = document.querySelector('.loginClick2');
-let loginClick3 = document.querySelector('.loginClick3');
-
-loginBtn1.addEventListener('click', () => {
-    loginClick1.style.display = 'block';
+lostBtn2.addEventListener('click', () => {
+    lostEM_2.style.display = 'block';
+    console.log('it worked!');
 });
 
-
-
-loginClick1.addEventListener('click', () => {
-    loginClick1.style.display = 'none';
-});
-
-
-let lostEmail = document.querySelector('.lostEmail');
-
-loginBtn2.addEventListener('click', () => {
-    // lostEmail.style.width = '375px';
-    lostEmail.style.display = 'block';
-    console.log('it workd!');
-
-});
-
-loginBtn3.addEventListener('click', () => {
-    // lostEmail.style.width = '0';
-    lostEmail.style.display = 'none';
-
+lostBtn3.addEventListener('click', () => {
+    lostEM_2.style.display = 'none';
+    console.log('reset workd!');
 });
