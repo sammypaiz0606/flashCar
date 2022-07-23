@@ -19,6 +19,7 @@ lostBtn3.addEventListener('click', () => {
 
 let loginBtn = document.querySelector('.loginBtn');
 let sections3 = document.querySelector('.sections3');
+let sections4 = document.querySelector('.sections4');
 let plusIcon = document.querySelector('.plusIcon');
 let plusPopUp = document.querySelector('.plusPopUp');
 
@@ -35,8 +36,16 @@ plusIcon.addEventListener('click', () => {
 });
 
 
+let done = document.querySelector('#done');
+let overniteInfo = document.querySelector('.overniteInfo');
+
 plusPopUp.addEventListener('click', () => {
     plusPopUp.style.display = 'none';
+    overniteInfo.style.display = 'block';
+        sections4.style.display = 'block';
+
 });
+
+
 
 

@@ -223,7 +223,7 @@
     
 }
 #topBar3 i {
-    color:darkblue;
+    color:blue;
 
 }
 #topBar3 #issued {
@@ -247,6 +247,10 @@
 .hotel #world {
     float:right;
     margin:5px;
+}
+#world i {
+    position: relative;
+    right:5px;
 }
 .plusIcon {
     cursor:pointer;
@@ -292,6 +296,47 @@
 
 }
 
+/*-----------------------section 4 Car Info-----------*/
+
+.sections4 {
+    display:none;
+    position: absolute;
+    top:0px;
+    background:#000;
+    width:680px;
+}
+.overniteInfo {
+}
+.topBar4 {
+    width:100%;
+    height:50px;
+    background:rgba(38, 38, 38, 01);
+}
+.topBar4 li {
+    float:left;
+    padding:5px 44px;
+    list-style:none;
+    font-size:1.4rem;
+    position: relative;
+    top:10px;
+}
+.middleInfo .ul2 li {
+    list-style:none;
+    text-align:left;
+    padding:15px;
+    border-bottom:1px solid #fff;
+    position: relative;
+    top:15px
+
+}
+.middleInfo .ul2 input {
+    width:500px;
+    height:30px;
+    margin-left:10px;
+    padding-left:10px;
+    border:none;
+    background:none;
+}
 
 @media only screen and (max-width:600px) {
     #container {
@@ -373,4 +418,16 @@
     .sections3 {
         height:600px;    
     }
+    .sections4 {
+        width:380px;   
+    }
+    .topBar4 li {
+        font-size:1rem;
+        padding:5px 22px;
+    }
+
+    .middleInfo .ul2 input {
+        width:230px;
+    }
+   
 }
