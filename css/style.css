@@ -11,6 +11,7 @@
 }
 #wrapper {
     width:680px;
+    height:800px;
     margin:0 auto;
     padding:0;
     background:#000;
@@ -51,7 +52,7 @@
     left:-35px;
 }
 
-#numbers {
+#numbers1 {
     float:right;
     position: relative;
     top:-40px;
@@ -122,40 +123,53 @@
     margin-top:50px;
 }
 
+
+
+/*---------section 2 Lost Email--------------> */
 .lostEM_2 {
     position: relative;
     top:-530px;
-    width:10px;
+    width:100%;
     height:700px;
+    padding-top:30px;
     background:#000;
-    z-index:10;
-    /* display:none; */
-    visibility: hidden;
-    overflow:hidden;
+    display:none;
+     overflow:hidden;
     transition:width 0.5s;
 }
-#titleEmail {
+#topBar2 {
     width:100%;
     height:50px;
+    background:orange;
+
+    position: relative;
+    top:200px;
+    
 }
-#titleEmail li {
+#topBar2 li {
     list-style:none;
     float:center;
     text-align:right;
+    position: relative;
+    top:200px;
 }
-#titleEmail li h2 {
+#topBar2 #titleCar {
     text-align:right;
     position: relative;
-    top:20px;
-    left:-300px;
+    left:-100px;
+    background:orange;
+    width:100%;
+    height:50px;
 }
 #numbers2 {
    position: relative;
-   top:0px;
+   top:-25px;
+   float:right;
+   list-style:none;
 
 }
 #lostEmail {
-   padding-top:20px;
+   padding-top:50px;
 }
 #lostEmail li {
     float:left;
@@ -169,22 +183,123 @@
 }
 
 #lostEmail li input {
-    width:400px;
+    width:380px;
     height:35px;
     background:none;
     border:1px solid #fff;
     padding-left:5px;
     position: relative;
-    right:-150px;
+    right:-160px;
    
 }
 .lostBtn3 {
     position: relative;
     top:5px;
+} 
+
+/*--------------sections 3---------------->*/
+.sections3 {
+    display:none;
+    position:relative;
+    top:-530px;
+    width:100%;
+    height:800px;
+    background:#000;
 }
+#topBar3 {
+    width:100%;
+    height:50px;
+
+}
+#topBar3 ul {
+   margin-left:0px;
+}
+#topBar3 li {
+    float:left;
+    list-style:none;
+    padding:10px 25px;
+    margin:0 5px;
+    font-size:1.5rem;
+    
+}
+#topBar3 i {
+    color:darkblue;
+
+}
+#topBar3 #issued {
+    margin:0 40px;
+}
+.fixedSection {
+    display: fixed;
+}
+.hotel {
+    width:100%;
+    height:30px;
+    background:rgba(38, 38, 38, 01);;
+}
+.hotel li {
+    float:left;
+    list-style:none;
+}
+#hotelH4 {
+    margin:5px;
+}
+.hotel #world {
+    float:right;
+    margin:5px;
+}
+.plusIcon {
+    cursor:pointer;
+}
+.plusIcon i {
+    position: absolute;
+    top:14px;
+}
+.plusPopUp {
+    width:100%;
+    display:none;
+}
+#selectTic {
+    width:90%;
+    height:185px;
+    border-radius:5px;
+    position: relative;
+    top:440px;
+    left:20px;
+    background:rgba(38, 38, 38, 1);
+    text-align:center;
+    
+}
+#selectTic h5 {
+    padding:10px;
+    border-bottom:1px solid #fff;
+}
+#selectTic li {
+    padding:15px;
+    border-bottom:1px solid #fff;
+    list-style:none;
+}
+#selectTic #re-issueLine {
+    border-bottom:none;
+}
+
+#selectTic #ul2 #cancelBottom {
+    position: relative;
+    top:10px;
+    background:rgba(38, 38, 38, 1);
+    border-bottom:none;
+    border-radius:5px;
+
+}
+
+
 @media only screen and (max-width:600px) {
+    #container {
+        height:650px;
+    }
     #wrapper {
         width:375px;
+        height:650px;
        
     }
     .loginContext {
@@ -205,7 +320,7 @@
         font-size:1rem;
 
     }
-    #titleEmail li h2 {
+    #topBar2 li h2 {
         position: relative;
         left:-150px;
     }
@@ -216,5 +331,46 @@
         width:250px;
         position: relative;
         left:10px;
+    }
+    .sections3 {
+        position: relative;
+        display:none;
+    }
+    #topBar3 li {
+        margin-top:10px;
+        padding:10px 8px;
+        font-size:1.1rem;
+    }
+   
+    #topBar3 #issued {
+        position: relative;
+        top:10px;
+    }
+    #topBar3 .plusIcon {
+        position: relative;
+        top:-5px;
+    }
+    #selectTic {
+        position: relative;
+        top:320px;
+    }
+    #selectTic #cancel {
+        position: relative;
+        top:-180px;
+    }
+    #selectTic #ul2 {
+        position: relative;
+        top:200px;
+    }
+    #selectTic #ul2 li {
+        position: relative;
+        top:10px;
+    }
+    #selectTic #ul2 #cancelBottom {
+        position: relative;
+        top:-10px;
+    }
+    .sections3 {
+        height:600px;    
     }
 }
