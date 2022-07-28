@@ -205,36 +205,40 @@
     width:100%;
     height:800px;
     background:#000;
+    padding-top:30px;
 }
 #topBar3 {
     width:100%;
-    height:50px;
+    height:60px;
 
 }
 #topBar3 ul {
-   margin-left:0px;
 }
 #topBar3 li {
     float:left;
     list-style:none;
-    padding:10px 25px;
+    padding:15px 25px;
     margin:0 5px;
-    font-size:1.5rem;
+    font-size:2rem;
     
 }
 #topBar3 i {
     color:blue;
 
 }
+#topBar3 .refresh {
+    margin-left:-20px;
+}
 #topBar3 #issued {
-    margin:0 40px;
+    margin:0 200px;
+
 }
 .fixedSection {
     display: fixed;
 }
 .hotel {
     width:100%;
-    height:30px;
+    height:40px;
     background:rgba(38, 38, 38, 01);;
 }
 .hotel li {
@@ -254,10 +258,13 @@
 }
 .plusIcon {
     cursor:pointer;
+    position: absolute;
+    right:0;
 }
 .plusIcon i {
     position: absolute;
     top:14px;
+    right:0;
 }
 .plusPopUp {
     width:100%;
@@ -294,6 +301,20 @@
     border-bottom:none;
     border-radius:5px;
 
+}
+.bottomBar3 {
+    width:100%;
+    height:50px;
+    background:rgba(38, 38, 38, 1);
+    position: absolute;
+    bottom:0;
+    z-index:100;
+
+}
+.bottomBar3 li {
+    list-style:none;
+    float:left;
+    padding:5px 20px;
 }
 
 /*-----------------------section 4 Car Info-----------*/
@@ -338,6 +359,8 @@
     background:none;
 }
 
+
+
 @media only screen and (max-width:600px) {
     #container {
         height:650px;
@@ -380,24 +403,34 @@
     .sections3 {
         position: relative;
         display:none;
+        padding-top:10px;
+    }
+    #topBar3 {
     }
     #topBar3 li {
         margin-top:10px;
         padding:10px 8px;
-        font-size:1.1rem;
+        font-size:1.5rem;
     }
-   
+    #topBar3 .refresh {
+        position: relative;
+        left:25px;
+    }
     #topBar3 #issued {
         position: relative;
         top:10px;
+        margin:0 120px;
     }
     #topBar3 .plusIcon {
         position: relative;
         top:-5px;
     }
+    .hotel {
+        height:30px;
+    }
     #selectTic {
         position: relative;
-        top:320px;
+        top:240px;
     }
     #selectTic #cancel {
         position: relative;
@@ -416,7 +449,7 @@
         top:-10px;
     }
     .sections3 {
-        height:600px;    
+        height:630px;    
     }
     .sections4 {
         width:380px;   
