@@ -310,12 +310,15 @@
     bottom:70px;
     z-index:100;
 
+
 }
 .bottomBar3 li {
     list-style:none;
     float:left;
-    padding:5px 20px;
+    padding: 5px 35px;
+    margin: 10px 23px;
 }
+
 
 /*-----------------------section 4 Car Info-----------*/
 
@@ -432,7 +435,7 @@
     #selectTic {
         position: relative;
         top:240px;
-        left:20px;
+        left:18px;
     }
     #selectTic #cancel {
         position: relative;
@@ -454,8 +457,13 @@
         height:630px;    
     }
     .bottomBar3 {
-        position: relative;
-        bottom:-310px;
+        position: fixed;
+        width:375px;
+        top:600px;
+    }
+    .bottomBar3 li {
+        padding: 5px 13px;
+        margin: 10px 15px;
     }
     .sections4 {
         width:380px;   
