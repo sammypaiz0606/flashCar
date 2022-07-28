@@ -46,6 +46,11 @@ plusPopUp.addEventListener('click', () => {
 
 });
 
+let leftArrow = document.querySelector('.leftArrow');
+
+leftArrow.addEventListener('click', () => {
+    sections3.style.display = 'none';
+});
 
 
 
