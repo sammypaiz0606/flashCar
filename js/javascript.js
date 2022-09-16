@@ -1,3 +1,5 @@
+
+
 let lostEM_2 = document.querySelector('.lostEM_2');
 
 let lostBtn2 = document.querySelector('.lostBtn2');
@@ -39,18 +41,27 @@ plusIcon.addEventListener('click', () => {
 let done = document.querySelector('#done');
 let overniteInfo = document.querySelector('.overniteInfo');
 
-plusPopUp.addEventListener('click', () => {
-    plusPopUp.style.display = 'none';
-    overniteInfo.style.display = 'block';
-        sections4.style.display = 'block';
+// plusPopUp.addEventListener('click', () => {
+//     plusPopUp.style.display = 'none';
+//     overniteInfo.style.display = 'block';
+//         sections4.style.display = 'block';
 
-});
+// });
 
 let leftArrow = document.querySelector('.leftArrow');
 
 leftArrow.addEventListener('click', () => {
     sections3.style.display = 'none';
+    plusPopUp.style.display = 'none';
 });
 
+//overnight 
+let overnight = document.querySelector('#overnight');
 
+overnight.addEventListener('click', () => {
+    plusPopUp.style.display = 'none';
+    overniteInfo.style.display = 'block';
+    sections4.style.display = 'block';
+    console.log('overnight hello!');
+});
 

@@ -23,7 +23,7 @@
 #login {
     width:100%;
     height:60px;
-    background:#132D13;
+    background:#023743;
     
 }
 #login h3 {
@@ -226,8 +226,9 @@
     color:blue;
 
 }
-#topBar3 .refresh {
+#topBar3 .leftArrow {
     margin-left:-20px;
+    cursor:pointer;
 }
 #topBar3 #issued {
     margin:0 200px;
