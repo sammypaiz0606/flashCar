@@ -38,7 +38,6 @@ plusIcon.addEventListener('click', () => {
 });
 
 
-let done = document.querySelector('#done');
 let overniteInfo = document.querySelector('.overniteInfo');
 
 // plusPopUp.addEventListener('click', () => {
@@ -62,6 +61,21 @@ overnight.addEventListener('click', () => {
     plusPopUp.style.display = 'none';
     overniteInfo.style.display = 'block';
     sections4.style.display = 'block';
-    console.log('overnight hello!');
 });
 
+
+//Done input
+let done = document.querySelector('#done');
+let cancelpopUp = document.querySelector('#cancelpopUp');
+
+done.addEventListener('click', () => {
+    overniteInfo.style.display = 'none';
+    sections4.style.display = 'none';
+    console.log('done!');
+});
+
+cancelpopUp.addEventListener('click', () => {
+    overniteInfo.style.display = 'none';
+    sections4.style.display = 'none';
+    console.log('cancelled!');
+});

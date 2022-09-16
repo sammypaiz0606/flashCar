@@ -363,7 +363,9 @@
     background:none;
 }
 
-
+#overnight, #cancel, #cancelpopUp, #done:hover {
+    cursor:pointer;
+}
 
 @media only screen and (max-width:600px) {
     #container {
@@ -418,7 +420,7 @@
     }
     #topBar3 .leftArrow {
         position: relative;
-        left:0px;
+        left:20px;
     }
     #topBar3 #issued {
         position: relative;
@@ -428,7 +430,7 @@
     #topBar3 .plusIcon {
         position: relative;
         top:-2px;
-        right:-20px;
+        right:-50px;
     }
     .hotel {
         height:30px;
