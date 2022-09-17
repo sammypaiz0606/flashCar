@@ -320,11 +320,23 @@
     margin: 10px 23px;
 }
 .carList {
-    background:orange;
     width:100%;
     height:auto;
 }
+table {
+    width:100%;
+    border-collapse: collapse;
 
+}
+tr {
+    width:100%;
+
+}
+tr:nth-child(even){background-color: #83806f;}
+
+td {
+    padding:10px;
+}
 /*-----------------------section 4 Car Info-----------*/
 
 .sections4 {

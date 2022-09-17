@@ -93,7 +93,7 @@ done.addEventListener('click', ()=> {
     if(nameInput == '' || carInput == '' || modelInput == '' || colorInput == '' || plateInput == '' || numberInput == '') {
         alert('Please field in your car information!');
     } else {
-        text += '<td>' + nameInput + '</td>' + ' ' + '<td>' + carInput + '</td>' + ' ' + '<td>' + modelInput + '</td>' + ' ' + '<td>' + colorInput + '</td>' + ' ' + '<td>' + plateInput + '</td>' + ' ' + '<td>' + numberInput + '</td>';
+        text += '<tr>' + '<td>' + nameInput + '</td>' + '  ' + '<td>' + carInput + '</td>' + '  ' + '<td>' + modelInput + '</td>' + '  ' + '<td>' + colorInput + '</td>' + '  ' + '<td>' + plateInput + '</td>' + '  ' + '<td>' + numberInput + '</td>' + '</tr>';
        
     }
 
