@@ -74,6 +74,29 @@ done.addEventListener('click', () => {
     console.log('done!');
 });
 
+let table = document.querySelector('#table');
+let tableBody = '';
+
+done.addEventListener('click', ()=> {
+    let nameInput   = document.querySelector('#nameInput').value;
+    let carInput    = document.querySelector('#carInput').value;
+    let modelInput  = document.querySelector('#modelInput').value;
+    let colorInput  = document.querySelector('#colorInput').value;
+    let plateInput  = document.querySelector('#plateInput').value;
+    let numberInput = document.querySelector('#numberInput').value;
+
+    let tr = document.createElement('tr');
+    let text = '';
+
+    console.log(nameInput, carInput, modelInput, colorInput, plateInput, numberInput);
+
+    if(nameInput == '' || carInput == '' || modelInput == '' || colorInput == '' || plateInput == '' || numberInput == '') {
+        alert('Please field in your car information!');
+    }
+});
+
+
+
 cancelpopUp.addEventListener('click', () => {
     overniteInfo.style.display = 'none';
     sections4.style.display = 'none';
