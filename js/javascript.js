@@ -92,7 +92,15 @@ done.addEventListener('click', ()=> {
 
     if(nameInput == '' || carInput == '' || modelInput == '' || colorInput == '' || plateInput == '' || numberInput == '') {
         alert('Please field in your car information!');
+    } else {
+        text += '<td>' + nameInput + '</td>' + ' ' + '<td>' + carInput + '</td>' + ' ' + '<td>' + modelInput + '</td>' + ' ' + '<td>' + colorInput + '</td>' + ' ' + '<td>' + plateInput + '</td>' + ' ' + '<td>' + numberInput + '</td>';
+       
     }
+
+    tr.innerHTML = text;
+    table.appendChild(tr);
+
+    console.log(table);
 });
 
 
