@@ -56,16 +56,20 @@ leftArrow.addEventListener('click', () => {
 
 //overnight 
 let overnight = document.querySelector('#overnight');
+let transient = document.querySelector('#transient');
 
 overnight.addEventListener('click', () => {
     plusPopUp.style.display = 'none';
     overniteInfo.style.display = 'block';
     sections4.style.display = 'block';
+    doneOver.style.display  = 'block';
+
 });
 
 
 //Done input
 let done = document.querySelector('#done');
+// let doneTrans = document.querySelector('#doneTrans');
 let cancelpopUp = document.querySelector('#cancelpopUp');
 
 done.addEventListener('click', () => {
@@ -73,9 +77,16 @@ done.addEventListener('click', () => {
     sections4.style.display = 'none';
     console.log('done!');
 });
+// transient.addEventListener('click', () => {
+//     overniteInfo.style.display = 'none';
+//     sections4.style.display = 'none';
+//     doneTrans.style.display = 'block';
+//     console.log('done!');
+// });
 
 let table = document.querySelector('#table');
 let tableBody = '';
+
 
 done.addEventListener('click', ()=> {
     let nameInput   = document.querySelector('#nameInput').value;
@@ -93,7 +104,7 @@ done.addEventListener('click', ()=> {
     if(nameInput == '' || carInput == '' || modelInput == '' || colorInput == '' || plateInput == '' || numberInput == '') {
         alert('Please field in your car information!');
     } else {
-        text += '<tr>' + '<td>' + nameInput + '</td>' + '  ' + '<td>' + carInput + '</td>' + '  ' + '<td>' + modelInput + '</td>' + '  ' + '<td>' + colorInput + '</td>' + '  ' + '<td>' + plateInput + '</td>' + '  ' + '<td>' + numberInput + '</td>' + '</tr>';
+        text += '</tr>' + '<tr>' + '<td>' + nameInput + '</td>' + '  ' + '<td>' + carInput + '</td>' + '  ' + '<td>' + modelInput + '</td>' + '  ' + '<td>' + colorInput + '</td>' + '  ' + '<td>' + plateInput + '</td>' + '  ' + '<td>' + numberInput + '</td>' + '</tr>';
        
     }
 
