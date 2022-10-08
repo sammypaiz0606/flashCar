@@ -119,7 +119,7 @@ done.addEventListener('click', ()=> {
 
 
 cancelpopUp.addEventListener('click', () => {
-    overniteInfo.style.display = 'none';
+    overniteInfo.style.display = 'block';
     sections4.style.display = 'none';
     console.log('cancelled!');
 });
