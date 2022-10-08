@@ -33,7 +33,8 @@ loginBtn.addEventListener('click', () => {
 });
 
 plusIcon.addEventListener('click', () => {
-    plusPopUp.style.display = 'block';
+    sections4.style.display = 'block';
+    // plusPopUp.style.display = 'block';
     console.log('hello');
 });
 
@@ -51,20 +52,21 @@ let leftArrow = document.querySelector('.leftArrow');
 
 leftArrow.addEventListener('click', () => {
     sections3.style.display = 'none';
-    plusPopUp.style.display = 'none';
+    // plusPopUp.style.display = 'none';
+    sections4.style.display = 'none';
 });
 
 //overnight 
-let overnight = document.querySelector('#overnight');
-let transient = document.querySelector('#transient');
+// let overnight = document.querySelector('#overnight');
+// let transient = document.querySelector('#transient');
 
-overnight.addEventListener('click', () => {
-    plusPopUp.style.display = 'none';
-    overniteInfo.style.display = 'block';
-    sections4.style.display = 'block';
-    doneOver.style.display  = 'block';
+// overnight.addEventListener('click', () => {
+//     plusPopUp.style.display = 'none';
+//     overniteInfo.style.display = 'block';
+//     sections4.style.display = 'block';
+//     doneOver.style.display  = 'block';
 
-});
+// });
 
 
 //Done input
@@ -73,7 +75,7 @@ let done = document.querySelector('#done');
 let cancelpopUp = document.querySelector('#cancelpopUp');
 
 done.addEventListener('click', () => {
-    overniteInfo.style.display = 'none';
+    // overniteInfo.style.display = 'none';
     sections4.style.display = 'none';
     console.log('done!');
 });
