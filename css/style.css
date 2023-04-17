@@ -1,517 +1,225 @@
 * {
-    margin:0;
-    padding:0;
-    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 3em;
+    color: green;
+}
+h3 {
+    font-size: 1.5em;
+    color: #000;
+}
+p {
+    font-size: 1.7em;
+}
+li {
+    color: #000;
+    font-size: 1.5em;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: #989895;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+   width: 680px;
+   height: 680px;
+}
+.mainBar {
+    display: flex;
+    justify-content: center;
+}
+.topBar {
+    width: 680px;
+    height: 70px;
+    background: #CDB83D;
+} 
+.login{
 
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
-#container {
-    width:100%;
-    height:800px;
-    background:#000;
+/* Support, Car Log & Numbers */
+.sectionBar {
+    margin: 20px 0;
 }
-#wrapper {
-    width:680px;
-    height:800px;
-    margin:0 auto;
-    padding:0;
-    background:#000;
-    text-align:center;
-}
-.sections {
-    height:250px;
-}
-#login {
-    width:100%;
-    height:60px;
-    background:#023743;
-    
-}
-#login h3 {
-    padding-top:20px;
-}
-
-.supFlashNum li {
-    list-style:none;
-}
-#support  {
-    margin:5px;
-    padding:5px;
-    color:red;
-    border:1px solid red;
-    display:inline-block;
-    float:left;
-    position:relative;
-    top:-15px;
-}
-
 #title {
-    font-size:1.5rem;
-    text-align:center;
     position: relative;
-    top:-15px;
-    left:-35px;
+    top:-10px;
+}
+.sectionBar ul li {
+    font-size: 2em;
+}
+.supTitleNum {
+    
 }
 
-#numbers1 {
-    float:right;
+/* Instructions */
+.instructions .para1 ol {
+    margin-left: 20px;
+}
+#support {
     position: relative;
-    top:-40px;
+    top:-10px;
+    padding: 5px;
+    background:rgba(23, 158, 23, 0.1);
+    border:2px solid green;
+    color: green;
 }
-#supFlashNum ul li{
-    float:left;
-    list-style:none;
+
+.supTitleNum ul {
+    display: flex;
+    justify-content: space-between;
+
 }
-.loginContext {
-    float:left;
-    position: relative;
-    top:-15px;
-}
-.loginContext li {
-    margin:15px;
-    font-size:1.5rem;
+.supTitleNum ul li {
     list-style: none;
-    text-align:left;
 
 }
 
-.loginInput {
-    float:right;
+/*---- Email Info ----*/
+.loginContext {
+    display: flex;
+    justify-content: space-between;
+}
+.loginContext ul li {
+    list-style: none;
+    font-size: 2em;
+}
+.loginContext .emailPass ul li {
+    margin: 7px 0;
     position: relative;
-    top:-5px;
+    top: 5px;
 }
-.loginInput li {
-    list-style:none;
-    
+.loginContext ul li input {
+    background: none;
+    width: 400px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
 }
-.loginInput input {
-    width:400px;
-    height:35px;
-    margin:5px;
-    padding-left:5px;
-    background:none;
-    border:1px solid #fff;
-
-}
+/* ---- Login Button ----*/
 .button {
-    width:99%;
+    width:98%;
     height:50px;
-    background:#C2C3BF;
+    background:#676761;
     border:1px solid #fff;
-    position: relative;
-    top:-35px;
+    margin: 10px 0;
     cursor:pointer;
+    display: flex;
+    justify-content: center;
 }
-.button div {
+.button h3 {
     position: relative;
-    top:15px;
-    font-size:1.2rem;
+    top: 10px;
 }
-.para1 {
-    text-align:left;
-    margin-left:30px;
-    margin-top:-30px;
+.button:hover {
+    background:#44443C;
 }
-.para1 p {
-    font-size:2rem;
-    margin:5px 0 5px -20px;
-}
-.para1 li {
-    font-size:1.6rem;
-    margin:15px 0;
-}
-.lostBtn2 {
-    margin-top:50px;
+.button h3:hover {
+    color:green;
+
 }
 
-
-
-/*---------section 2 Lost Email--------------> */
 .lostEM_2 {
+    width: 0;
+    height: 600px;
+    overflow: hidden;
+    visibility: hidden;
+    background: #000;
+    transition: width 1s;
     position: relative;
-    top:-530px;
-    width:100%;
-    height:700px;
-    padding-top:30px;
-    background:#000;
-    display:none;
-    overflow:hidden;
-    transition:width 0.5s;
+    top: -580px;
+    position: relative;
+    z-index: 1;
+
 }
-#topBar2 {
-    width:100%;
-    height:50px;
-    background:orange;
-    position: relative;
-    top:200px;
-    
+.lostEM_2 .topBar2 ul {
+    display: flex;
+    justify-content: space-between;
+
 }
-#topBar2 li {
-    list-style:none;
-    float:center;
-    text-align:right;
-    position: relative;
-    top:200px;
+.lostEM_2 .topBar2 ul li {
+    list-style: none;
+    margin: 20px;
 }
-#topBar2 #titleCar {
-    text-align:right;
-    position: relative;
-    left:-100px;
-    background:orange;
-    width:100%;
-    height:50px;
+.lostEM_2 #titleEmail ul li {
+    font-size: 2em;
+    color: #fff;
 }
 #numbers2 {
-   position: relative;
-   top:-25px;
-   float:right;
-   list-style:none;
-
-}
-#lostEmail {
-   padding-top:50px;
-}
-#lostEmail li {
-    float:left;
-    list-style:none;
-}
-#lostEmail #lostEmAdd {
-    margin-right:20px;
-    font-size:1.2rem;
     position: relative;
-    top:7px;
+    top: 15px;
 }
-
-#lostEmail li input {
-    width:380px;
-    height:35px;
-    background:none;
-    border:1px solid #fff;
-    padding-left:5px;
+#lostEmail ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+#lostEmail ul li {
+    list-style: none;
+    font-size: 2em;
+}
+#lostEmAdd {
+    color:#ddd;
     position: relative;
-    right:-160px;
-   
+    left: -15px;
+}
+#lostEmail input {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    position: relative;
+    top: -5px;
 }
 .lostBtn3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    width: 96%;
+}
+.resetButton  {
+     display: flex;
+     justify-content: center;
+}
+.resetButton h3 {
     position: relative;
-    top:5px;
-} 
-
-/*--------------sections 3---------------->*/
-.sections3 {
-    display:none;
-    position:relative;
-    top:-530px;
-    width:100%;
-    height:750px;
-    background:#000;
-    padding-top:30px;
+    top: 10px;
 }
-#topBar3 {
-    width:100%;
-    height:60px;
-
-}
-#topBar3 ul {
-}
-#topBar3 li {
-    float:left;
-    list-style:none;
-    margin:0 5px;
-    
-}
-#topBar3 i {
-    color:blue;
-    font-size: 1.2em;
-
-}
-#topBar3 .leftArrow {
-    margin-left:-20px;
-    cursor:pointer;
-}
-#topBar3 #issued {
-    margin:0 200px;
-
-}
-.fixedSection {
-    display: fixed;
-}
-.hotel {
-    width:100%;
-    height:40px;
-    background:rgba(38, 38, 38, 01);;
-}
-.hotel li {
-    float:left;
-    list-style:none;
-}
-#hotelH4 {
-    margin:5px;
-}
-.hotel #world {
-    float:right;
-    margin:5px;
-}
-#world i {
-    position: relative;
-    right:5px;
-}
-.plusIcon {
-    cursor:pointer;
-    position: absolute;
-    right:0;
-}
-.plusIcon i {
-    position: absolute;
-    top:14px;
-    right:0;
-}
-.plusPopUp-1 {
-    width:100%;
-    display:none;
-}
-#selectTic {
-    width:90%;
-    height:185px;
-    border-radius:5px;
-    position: relative;
-    top:280px;
-    left:35px;
-    background:rgba(38, 38, 38, 1);
-    text-align:center;
-    
-}
-#selectTic h5 {
-    padding:10px;
-    border-bottom:1px solid #fff;
-}
-#selectTic li {
-    padding:15px;
-    border-bottom:1px solid #fff;
-    list-style:none;
-}
-#selectTic #re-issueLine {
-    border-bottom:none;
-}
-
-#selectTic #ul2 #cancelBottom {
-    position: relative;
-    top:10px;
-    background:rgba(38, 38, 38, 1);
-    border-bottom:none;
-    border-radius:5px;
-
-}
-.bottomBar3 {
-    width:100%;
-    height:50px;
-    background:rgba(38, 38, 38, 1);
-    position: absolute;
-    bottom:70px;
-    z-index:100;
-
-
-}
-.bottomBar3 li {
-    list-style:none;
-    float:left;
-    padding: 5px 35px;
-    margin: 10px 23px;
-}
-.carList {
-    width:100%;
-    height:auto;
-}
-table {
-    width:100%;
-    border-collapse: collapse;
-
-}
-tr {
-    width:100%;
-    height:25px;
-
-}
-tr:nth-child(even){background-color: #83806f;}
-
-td {
-    padding:5px;
-}
-
-#doneOver {
-    display:none;
-}
-#doneTrans {
-    display:none;
-}
-/* #overnight_2 {
-    float:left;
-    padding:5px;
-    display:none;
-    color:#fff;
-}
-#transient_2 {
-    float:left;
-    display:none;
-    padding:5px;
-    color:#fff;
-} */
-/*-----------------------section 4 Car Info-----------*/
-
-.sections4 {
-    display:none;
-    position: absolute;
-    top:0px;
-    background:#000;
-    width:680px;
-}
-.overniteInfo {
-}
-.topBar4 {
-    width:100%;
-    height:50px;
-    background:rgba(38, 38, 38, 01);
-}
-.topBar4 li {
-    float:left;
-    padding:5px 44px;
-    list-style:none;
-    font-size:1.4rem;
-    position: relative;
-    top:10px;
-}
-.middleInfo .ul2 li {
-    list-style:none;
-    text-align:left;
-    padding:15px;
-    border-bottom:1px solid #fff;
-    position: relative;
-    top:15px
-
-}
-.middleInfo .ul2 input {
-    width:500px;
-    height:30px;
-    margin-left:10px;
-    padding-left:10px;
-    border:none;
-    background:none;
-}
-
-#overnight, #cancel, #cancelpopUp, #done:hover {
-    cursor:pointer;
-}
-
-@media only screen and (max-width:600px) {
-    #container {
-        height:650px;
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 460px;
+        height: 550px;
     }
-    #wrapper {
-        width:375px;
-        height:650px;
-       
+    .loginContext  ul li input {
+        width: 300px;
     }
-    .loginContext {
-        position:relative;
-        top:-10px;
-    }
-    .loginContext li {
-        font-size:1.2rem;
-
-    }
-    .loginInput input {
-        width:220px;
-    }
-    .para1 p {
-        font-size:1.1rem;
-    }
-    .para1 li {
-        font-size:1rem;
-
-    }
-    #topBar2 li h2 {
+    .lostEM_2 {
         position: relative;
-        left:-150px;
-    }
-    #lostEmail #lostEmAdd {
-        font-size: 1rem;
-    }
-    #lostEmail li input {
-        width:250px;
-        position: relative;
-        left:10px;
-    }
-    .sections3 {
-        position: relative;
-        display:none;
-        padding-top:10px;
-    }
-    #topBar3 {
-    }
-    #topBar3 li {
-        margin-top:10px;
-        padding:10px 8px;
-        font-size:1.5rem;
-    }
-    #topBar3 .leftArrow {
-        position: relative;
-        left:20px;
-    }
-    #topBar3 #issued {
-        position: relative;
-        top:10px;
-        margin:0 100px;
-    }
-    #topBar3 .plusIcon {
-        position: relative;
-        top:-2px;
-        right:-50px;
-    }
-    .hotel {
-        height:30px;
-    }
-    #selectTic {
-        position: relative;
-        top:240px;
-        left:18px;
-    }
-    #selectTic #cancel {
-        position: relative;
-        top:-180px;
-    }
-    #selectTic #ul2 {
-        position: relative;
-        top:200px;
-    }
-    #selectTic #ul2 li {
-        position: relative;
-        top:10px;
-    }
-    #selectTic #ul2 #cancelBottom {
-        position: relative;
-        top:-10px;
-    }
-    .sections3 {
-        height:630px;    
-    }
-    .bottomBar3 {
-        position: fixed;
-        width:375px;
-        top:600px;
-    }
-    .bottomBar3 li {
-        padding: 5px 13px;
-        margin: 10px 15px;
-    }
-    .sections4 {
-        width:380px;   
-    }
-    .topBar4 li {
-        font-size:1rem;
-        padding:5px 22px;
-    }
-
-    .middleInfo .ul2 input {
-        width:230px;
+        top:-700px;
+        background: rgba(21, 21, 21, 0.8);
     }
    
+    #lostEmail {
+        width:560px;
+    }
+    #lostEmail #lostEmAdd {
+        font-size: 1.7em;
+        position:relative;
+        top:5px;
+    }
+    #lostEmail input {
+        width:200px;
+        position: relative;
+        right:100px;
+    }
+    .lostBtn3 {
+        width: 94%;
+    }
 }
