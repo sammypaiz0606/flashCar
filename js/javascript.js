@@ -23,7 +23,7 @@ let loginBtn = document.querySelector('.loginBtn');
 let sections3 = document.querySelector('.sections3');
 let sections4 = document.querySelector('.sections4');
 let plusIcon = document.querySelector('.plusIcon');
-let plusPopUp = document.querySelector('.plusPopUp');
+let plusPopUp = document.querySelector('.plusPopUp-1');
 
 
 loginBtn.addEventListener('click', () => {
@@ -33,7 +33,10 @@ loginBtn.addEventListener('click', () => {
 });
 
 plusIcon.addEventListener('click', () => {
-    sections4.style.display = 'block';
+    // plusPopUp.style.display = 'block';
+    plusPopUp.classList.toggle =('plusPopUp-1');
+    console.log('pop up menu');
+    // sections4.style.display = 'block';
     // plusPopUp.style.display = 'block';
     console.log('hello');
 });

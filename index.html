@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,24 +38,31 @@
 
 <body>
   
-    <div id="container">
-        <div id="wrapper">
-
-            <div class="sections">
-                    <div id="login">
-                        <h3>Login</h3>
+    <div class="container">
+        <div class="wrapper">
+            <!---- topBar ---->
+            <div class="mainBar">
+                <div class="topbar">
+                    <div class="login">
+                        <h1>Login</h1>
                     </div>
-                <br />
-               
-                <div class="supFlashNum">
+                </div>
+            </div>
+
+            <!---- Support, Car Log Numbers ---->
+            <div class="sectionBar">
+                <div class="supTitleNum">
                     <ul>
                         <li id="support">Support</li>
                         <li id="title">Car Log</li>
                         <li id="numbers1">1.2.3.0</li>
                     </ul>
                 </div>
-                <br />
-                <div class="loginContext">
+            </div>
+
+            <!---- Email info ---->
+            <div class="loginContext">
+                <div class="emailPass">
                     <ul>
                         <li>Email Address</li>
                         <li>Password</li>
@@ -62,151 +70,56 @@
                 </div>
                 <div class="loginInput">
                     <ul>
-                        <li><input type='text' placeholder='Enter your email address' /></li>
+                        <li><input type='text' placeholder='Enter your email' /></li>
                         <li><input type='text' placeholder='Enter your password' /></li>
                     </ul>
                 </div>
             </div>
 
-            <!-------------------Button-------------->
+            <!---- Login Button Login  ---->
             <div class="button lostBtn1">
-                <div class="loginBtn">Login</div>
+                <div class="loginBtn">
+                    <h3>Login</h3>
+                </div>
             </div>
-
-            <!------------------Login---------------->
-            <div class="Sections">
+            <!---- Instruction to login ---->
+            <div class="instructions">
                 <div class="para1">
                     <p>Don't have a password? Follow these 3 easy steps:</p>
-                    
                     <ol>
-                        <li> Enter the mail address you previously registered<br />
-                            with your car company (only that email will work).</li>
+                        <li> Enter email address you previously registered<br />
+                             your car (only that email will work).</li>
                         <li> Leave the Password field blank/empty.</li>
                         <li> Click the LOGIN button and a token will be emailed <br />
                             to you to allow you to set your password on the next screen.</li>
                     </ol>
                 </div>
-                <div class="button lostBtn2">
-                    <div>Lost your password?</div>
+            </div>
+            <!---- Login Button Lost Password  ---->
+            <div class="button lostBtn_1">
+                <div class="loginBtn">
+                    <h3>Lost your password</h3>
                 </div>
-            </div> 
+            </div>
 
-            <!----------------------------section 2 Lost Email--------->
-                <div class="sections lostEM_2">
-                    <div id="titleEmail topBar2">
-                        <ul>
-                            <li><h2 id="titleCar">Flash Car</h2></li>
-                            <li id="numbers2">2.9.1.0</li>
-                        </ul>
-                    </div>
-                    <div id="lostEmail">
-                        <ul>
-                            <li id="lostEmAdd">Email Address</li>
-                            <li id="input"><input type='text' placeholder='Enter your email address' /></li>
-                        </ul>
-                    </div>
-
-                    <br /><br /> 
-                    <!--------------Button---------------->
-                     <div class="button lostBtn3">
-                        <div>Send Password Reset Token</div>
-                    </div>
-                </div> 
-
-                    <!---------sections 3 in house ---------->
-
-                   <div class="sections sections3">
-                        <div id="topbar3">
-                            <ul>
-                                <li class="leftArrow"><i class="fa-solid fa-arrow-left"></i></li>
-                                <!-- <li><i class="fa-solid fa-file"></i></li>
-                                <li><i class="fa-solid fa-file-word"></i></li> -->
-                                <li id="issued">Issued</li>
-                                <!-- <li><i class="fa-solid fa-memo"></i></li>
-                                <li><i class="fa-solid fa-solar-panel"></i></li> -->
-                                <li class="plusIcon"><i class="fa-solid fa-plus"></i></li>
-                            </ul>
-                        </div>
-                         <div class="fixedSection">
-                            <div class="hotel">
-                                <ul>
-                                    <li id="hotelh4"><h4>Car Information</h4></li>                                   </li>
-                                    <li id="world"><i class="fa-solid fa-car"></i></li>
-                                </ul>
-                            </div>
-
-                            <!-----------------new carList------------------->
-
-                            <div class="carList">
-                                <table id="table" class="">
-                                    <tr>
-                                        <th id="doneOver">Overnight</th>
-                                        <th id="doneTrans">Transient</th>
-                                    </tr>
-                                </table>
-                            </div>
-
-                            <!------------------plusPopUp-------------------->
-
-                            <!-- <div class="plusPopUp">
-                                <div id="selectTic">
-                                    <h5>Select ticket type</h5>
-                                    <ul id="ul1">
-                                        <li id="overnight">Overnight</li>
-                                        <li id="transient">Transient</li>
-                                        <li id="re-issueLine">Re-Issue Ticket</li>
-                                    </ul>
-                                    <div id="cancel">
-                                        <ul id="ul2">
-                                            <li id="cancelBottom">Cancel</li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                            </div> -->
-                            <div class="bottomBar3">
-                                <ul>
-                                    <li><i class="fa-solid fa-car-battery"></i></li>
-                                    <li><i class="fa-solid fa-car-on"></i></li>
-                                    <li><i class="fa-solid fa-car-burst"></i></li>
-                                    <li><i class="fa-solid fa-gas-pump"></i></li>
-                                    <li><i class="fa-solid fa-caravan"></i></li>
-                                </ul>
-                            </div>
-
-                        </div> 
-
-                    </div>
-
-                    <!--sections 4 Car Info-->
-                    <div class="sections sections4">
-                        <div class="overniteInfo">
-                            <div class="topBar4">
-                                <ul class="ul1">
-                                    <li id="cancelpopUp">Cancel</li>
-                                    <li></li>
-                                     <li>Car Info</li>
-                                    <li><i class="fa-solid fa-camera"></i></li>
-                                    <li id="done" class="doneOver doneTrans">Done</li>
-                                </ul>
-                            </div>
-                             <div class="middleInfo">
-                                <ul class="ul2">
-                                    <li>Name:         <input type='text' id='nameInput' /></li>
-                                    <li>Car:          <input type='text' id='carInput' /></li>
-                                    <li>Model:        <input type='text' id='modelInput' /></li>
-                                    <li>Color:        <input type='text' id='colorInput' /></li>
-                                    <li>License Plate:<input type='text' id='plateInput' /></li>
-                                    <li>Serial Number:<input type='text' id='numberInput' /></li>
-                                </ul>
-                            </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+            <!---- Lost Email  ---->
+            <div class="lostEM_2">
+                <div id="titleEmail" class="topBar2">
+                    <ul>
+                        <li></li>
+                        <li><h2>Car List</h2></li>
+                        <li id="numbers2">1.2.3.0</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+          
+
+         
+
+              
     <!-- LATEST JQUERY -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- BOOTSTRAP JS -->
