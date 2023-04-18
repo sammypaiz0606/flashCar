@@ -198,9 +198,17 @@ body {
         width: 375px;
         height: 550px;
     }
+    .supTitleNum {
+        position: relative;
+        top: -5px;
+    }
     .supTitleNum  ul li {
         font-size: 1.3em;
         margin: 0 10px;
+    }
+    .loginContext {
+        position: relative;
+        top: -10px;
     }
     .loginContext  ul li input {
         width: 230px;
@@ -223,13 +231,13 @@ body {
     .button {
         width: 352px;
         position: relative;
-        top: -30px;
+        top: -40px;
         left: 10px;
     }
     .instructions {
         width: 355px;
         position: relative;
-        top: -40px;
+        top: -50px;
         left: 25px;
     }
     .para1 p {
@@ -240,16 +248,19 @@ body {
     }
     .lostEM_2 {
         position: relative;
-        top:-700px;
+        top:-630px;
         background: rgba(21, 21, 21, 0.8);
     }
    .lostEM_2 li h2 {
         font-size: 1em;
         position: relative;
+        top: 15px;
         left: 40px;
    }
     #lostEmail {
         width:375px;
+        position: relative;
+        top: 30px;
     }
     #lostEmail #lostEmAdd {
         font-size: 1.3em;
@@ -262,7 +273,7 @@ body {
     .lostBtn3 {
         width: 87%;
         position: relative;
-        top: 20px;
+        top: 30px;
         left: 0px;
     }
 }
