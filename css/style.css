@@ -205,11 +205,12 @@ body {
     .loginContext  ul li input {
         width: 230px;
         position: relative;
+        top: -20px;
         right:10px;
     }
     .emailPass ul {
         position: relative;
-        top: 5px;
+        top: -10px;
         left: 10px;
     }
     .emailPass ul li {
@@ -222,7 +223,20 @@ body {
     .button {
         width: 352px;
         position: relative;
+        top: -30px;
         left: 10px;
+    }
+    .instructions {
+        width: 355px;
+        position: relative;
+        top: -40px;
+        left: 25px;
+    }
+    .para1 p {
+        font-size: 1.5em;
+    }
+    .para1 ol li {
+        font-size: 1.3em;
     }
     .lostEM_2 {
         position: relative;
@@ -248,6 +262,7 @@ body {
     .lostBtn3 {
         width: 87%;
         position: relative;
+        top: 20px;
         left: 0px;
     }
 }
