@@ -177,6 +177,55 @@ body {
     color: #ddd;
     font-size: 1em;
 }
+#doneCancel {
+    /* width: 70px;
+    height: 30px; */
+    color: #ddd;
+    font-size: 0.9em;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    /* background: rgba(221, 221, 221, 0.4); */
+    visibility: hidden;
+    overflow: hidden;    
+}
+#doneCancel:hover {
+    cursor: pointer;
+}
+#doneCancel #bottom_button {
+    border: 1px solid green;
+    width: 80px;
+    height: 40px;
+}
+#doneCancel #bottom_button ul li {
+    position: relative;
+    top:-17px;
+    left:-10px;
+}
+/* #doneCancel #bottom_button ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: -20px;
+    
+}
+#doneCancel #bottom_button ul li {
+    border-bottom: 1px solid #000;
+    width: 200px;
+    height: 15px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+
+} */
+#popUpDOne {
+    position: relative;
+    top: -5px;
+}
+ #popUpCancel {
+    position: relative;
+    top:-30px;
+}
 /* Bottom Bar */
 .bottom {
     position: absolute;
@@ -433,5 +482,18 @@ body {
         left: 10px;
         background: none;
         border: none;
+    }
+    #doneCancel {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        font-size: 0.6em;        
+        width: 70px;
+        height:30px;
+        
+    }
+    #doneCancel #bottom_button ul li {
+        position: relative;
+        top: -15px;
     }
 }
