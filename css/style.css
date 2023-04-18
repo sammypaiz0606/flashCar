@@ -53,6 +53,14 @@ body {
     position: relative;
     top:-10px;
 }
+#support {
+    position: relative;
+    top:-10px;
+    padding: 5px;
+    background:rgba(23, 158, 23, 0.1);
+    border:2px solid green;
+    color: green;
+}
 .sectionBar ul li {
     font-size: 2em;
 }
@@ -63,14 +71,6 @@ body {
 /* Instructions */
 .instructions .para1 ol {
     margin-left: 20px;
-}
-#support {
-    position: relative;
-    top:-10px;
-    padding: 5px;
-    background:rgba(23, 158, 23, 0.1);
-    border:2px solid green;
-    color: green;
 }
 
 .supTitleNum ul {
@@ -92,13 +92,12 @@ body {
     list-style: none;
     font-size: 2em;
 }
-.loginContext .emailPass ul li {
-    margin: 7px 0;
-    position: relative;
-    top: 5px;
+.loginContext ul #email {
+        position: relative;
+        top: 10px;
 }
+
 .loginContext ul li input {
-    background: none;
     width: 400px;
     height: 30px;
     margin: 5px 0;
@@ -108,7 +107,7 @@ body {
 .button {
     width:100%;
     height:50px;
-    background:#676761;
+    background:green;
     border:1px solid #fff;
     margin: 10px 0;
     cursor:pointer;
@@ -120,10 +119,10 @@ body {
     top: 10px;
 }
 .button:hover {
-    background:#44443C;
+    background:darkgreen;
 }
 .button h3:hover {
-    color:green;
+    /* color:green; */
 
 }
 
@@ -132,10 +131,10 @@ body {
     height: 600px;
     overflow: hidden;
     visibility: hidden;
-    background: #000;
+    background: rgba(21, 21, 21, 0.8);
     transition: width 1s;
     position: relative;
-    top: -580px;
+    top: -500px;
     position: relative;
     z-index: 1;
     transition: width 0.5s;
@@ -231,13 +230,13 @@ body {
     .button {
         width: 352px;
         position: relative;
-        top: -40px;
+        top: -35px;
         left: 10px;
     }
     .instructions {
         width: 355px;
         position: relative;
-        top: -50px;
+        top: -35px;
         left: 25px;
     }
     .para1 p {
@@ -248,7 +247,7 @@ body {
     }
     .lostEM_2 {
         position: relative;
-        top:-630px;
+        top:-562px;
         background: rgba(21, 21, 21, 0.8);
     }
    .lostEM_2 li h2 {
