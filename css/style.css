@@ -65,13 +65,15 @@ body {
     cursor:pointer;
 }
 .supportInfo {
-    width: 300px;
-    height: 260px;
+    width: 340px;
+    height: 240px;
     background:#ddd;
     position: absolute;
+    margin-left: 17px;
     z-index: 10;
     border-radius: 50px;
     visibility: hidden;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
 .showSupport {
     visibility: visible;
@@ -88,7 +90,7 @@ body {
 #backImg p {
     position: relative;
     top: 20px;
-    width: 270px;
+    width: 310px;
     font-size: 1em;
 }
 #fatboy {
@@ -102,6 +104,69 @@ body {
     
 }
 
+.carLog {
+    width: 680px;
+    height: 680px;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    /* transition: width 0.5s; */
+    background: #000;
+
+}
+.topBarLog ul {
+    width: 100%;
+    height: 70px;
+    background: #CDB83D;
+
+}
+.showCarLog {
+    visibility: visible;
+
+}
+
+.carLog ul {
+    display: flex;
+    justify-content: space-between;
+}
+.carLog ul li {
+    list-style: none;
+    margin: 20px;
+    font-size: 2em;
+}
+.carLog ul #carIssued {
+    color: green;
+}
+.carInfo {
+    border-bottom: 1px solid #ddd;
+}
+.carInfo ul li {
+    font-size: 1em;
+    color: #ddd;
+}
+.carInfo ul #world {
+    position: relative;
+    top: 10px;
+}
+
+/* Bottom Bar */
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 680px;
+    height: 70px;
+    background: #CDB83D;
+
+    
+}
+.bottom .bottomBar ul {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .bottomBar ul li {
+    list-style: none;
+    margin:20px;
+}
 /* Instructions */
 .instructions .para1 ol {
     margin-left: 20px;
@@ -260,6 +325,15 @@ body {
     .emailPass #pass {
         position: relative;
         top: 20px;
+    }
+    .carLog {
+        width: 375px;
+        position: absolute;
+        z-index: 10;
+    }
+    .bottom {
+        width: 375px;
+        z-index: 100;
     }
     .button {
         width: 352px;
