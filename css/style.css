@@ -61,6 +61,40 @@ body {
     border:2px solid green;
     color: green;
 }
+#support:hover {
+    cursor:pointer;
+}
+.supportInfo {
+    width: 300px;
+    height: 260px;
+    background:#ddd;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50px;
+    visibility: hidden;
+}
+.showSupport {
+    visibility: visible;
+}
+#backImg {
+    background: green;
+    width: 130px;
+    height: 130px;
+    border-radius: 120px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#backImg p {
+    position: relative;
+    top: 20px;
+    width: 270px;
+    font-size: 1em;
+}
+#fatboy {
+    width: 120px;
+    border-radius: 120px;
+}
 .sectionBar ul li {
     font-size: 2em;
 }
