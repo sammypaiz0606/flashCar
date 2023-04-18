@@ -3,6 +3,12 @@ let lostEM_2 = document.querySelector('.lostEM_2');
 let page_1 = document.querySelector('.page_1');
 let resetButton = document.querySelector('.resetButton');
 let supportInfo = document.querySelector('.supportInfo');
+let loginBtn1 = document.querySelector('.loginBtn1');
+let carLog = document.querySelector('.carLog');
+let leftArrow = document.querySelector('.leftArrow');
+let bottom = document.querySelector('.bottom');
+let car_list = document.querySelector('.car_list');
+let plusIcon = document.querySelector('.plusIcon');
 
 let support = document.getElementById('support');
 
@@ -21,4 +27,49 @@ resetButton.addEventListener('click', ()=> {
 support.addEventListener('click', ()=> {
     supportInfo.classList.toggle('showSupport'); 
     // document.body.style.backgroundColor = '#000';
+});
+
+loginBtn1.addEventListener('click', ()=> {
+    carLog.classList.add('showCarLog');
+});
+
+leftArrow.addEventListener('click', ()=> {
+    carLog.classList.remove('showCarLog');
+    console.log('left arrow');
+});
+
+
+let table = document.querySelector('#table');
+let tableBody = '';
+
+
+plusIcon.addEventListener('click', ()=> {
+    car_list.style.visibility = 'visible';
+    let nameInput   = document.querySelector('#nameInput').value;
+    let carInput    = document.querySelector('#carInput').value;
+    let modelInput  = document.querySelector('#modelInput').value;
+    let colorInput  = document.querySelector('#colorInput').value;
+    let plateInput  = document.querySelector('#plateInput').value;
+    let numberInput = document.querySelector('#numberInput').value;
+
+    let tr = document.createElement('tr');
+    let text = '';
+
+    console.log(nameInput, carInput, modelInput, colorInput, plateInput, numberInput);
+
+    if(nameInput == '' || carInput == '' || modelInput == '' || colorInput == '' || plateInput == '' || numberInput == '') {
+        // alert('Please field in your car information!');
+        text += '</tr>' + '<tr>' + '<td>' + nameInput + '</td>' + '  ' + '<td>' + carInput + '</td>' + '  ' + '<td>' + modelInput + '</td>' + '  ' + '<td>' + colorInput + '</td>' + '  ' + '<td>' + plateInput + '</td>' + '  ' + '<td>' + numberInput + '</td>' + '</tr>';
+
+    } else {
+        alert('Please field in your car information!');
+
+        // text += '</tr>' + '<tr>' + '<td>' + nameInput + '</td>' + '  ' + '<td>' + carInput + '</td>' + '  ' + '<td>' + modelInput + '</td>' + '  ' + '<td>' + colorInput + '</td>' + '  ' + '<td>' + plateInput + '</td>' + '  ' + '<td>' + numberInput + '</td>' + '</tr>';
+       
+    }
+
+    tr.innerHTML = text;
+    table.appendChild(tr);
+
+    console.log(table);
 });
