@@ -148,7 +148,35 @@ body {
     position: relative;
     top: 10px;
 }
+.car_list {
+    visibility: hidden;
+}
+.car_List .middleInfo ul {
+    display: flex;
+    flex-direction: column;
+}
+.car_list .middleInfo ul li {
+    color: #ddd;
+    width: 640px;
+    position: relative;
+    bottom: 0px;
+    margin: 15px 20px;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
 
+}
+.car_list .middleInfo ul li input {
+    width: 500px;
+    height: 40px;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: #ddd;
+    font-size: 1em;
+}
 /* Bottom Bar */
 .bottom {
     position: absolute;
@@ -167,6 +195,9 @@ body {
     list-style: none;
     margin:20px;
 }
+
+
+
 /* Instructions */
 .instructions .para1 ol {
     margin-left: 20px;
@@ -382,5 +413,25 @@ body {
         position: relative;
         top: 30px;
         left: 0px;
+    }
+
+    .car_list .middleInfo ul li {
+        color: #ddd;
+        width: 330px;
+        position: relative;
+        bottom: 0px;
+        margin: 20px;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 1em;
+    
+    }
+    .car_list .middleInfo ul li input {
+        width: 180px;
+        position: relative;
+        top: -5px;
+        left: 10px;
+        background: none;
+        border: none;
     }
 }
