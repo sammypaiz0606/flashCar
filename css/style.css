@@ -138,6 +138,7 @@ body {
     top: -580px;
     position: relative;
     z-index: 1;
+    transition: width 0.5s;
 
 }
 .lostEM_2 .topBar2 ul {
@@ -169,7 +170,7 @@ body {
 #lostEmAdd {
     color:#ddd;
     position: relative;
-    left: -15px;
+    left: 5px;
 }
 #lostEmail input {
     width: 400px;
@@ -181,8 +182,8 @@ body {
 .lostBtn3 {
     display: flex;
     justify-content: center;
-    margin-left: 5px;
-    width: 96%;
+    margin-left: 25px;
+    width: 93%;
 }
 .resetButton  {
      display: flex;
@@ -194,7 +195,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
     .wrapper {
-        width: 460px;
+        width: 440px;
         height: 550px;
     }
     .loginContext  ul li input {
@@ -217,9 +218,9 @@ body {
     #lostEmail input {
         width:200px;
         position: relative;
-        right:100px;
+        right:120px;
     }
     .lostBtn3 {
-        width: 94%;
+        width: 89%;
     }
 }
