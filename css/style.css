@@ -137,6 +137,10 @@ body {
 .carLog ul #carIssued {
     color: green;
 }
+
+.showPlusIcon {
+    visibility: hidden;
+}
 .carInfo {
     border-bottom: 1px solid #ddd;
 }
@@ -148,14 +152,56 @@ body {
     position: relative;
     top: 10px;
 }
-.car_list {
+.popUp {
+    width: 350px;
+    height: 198px;
+    background: darkgrey;
+    position: absolute;
+    left: 25%;
+    bottom: 75px;
+    z-index: 20;
+    overflow: hidden;
+    border-radius: 25px;
+    visibility: hidden;
+
+}
+.popUp .popUp_1 {
+    display: flex;
+    justify-content: center;
+}
+.popUp_2 {
+    display: flex;
+    justify-content:center;
+}
+.popUp_2 ul {
+    width: 250px;
+    /* background: orange; */
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+.popUp_2 ul li {
+    width: 270px;
+    padding-left:120px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    position: relative;
+    left: -65px;
+}
+.showPopUp {
+    visibility: visible;
+}
+.popUp_2 ul li p {
+
+}
+.car_List {
     visibility: hidden;
 }
 .car_List .middleInfo ul {
     display: flex;
     flex-direction: column;
 }
-.car_list .middleInfo ul li {
+.car_List .middleInfo ul li {
     color: #ddd;
     width: 640px;
     position: relative;
@@ -166,7 +212,7 @@ body {
     font-size: 1.3em;
 
 }
-.car_list .middleInfo ul li input {
+.car_List .middleInfo ul li input {
     width: 500px;
     height: 40px;
     position: relative;
@@ -177,7 +223,7 @@ body {
     color: #ddd;
     font-size: 1em;
 }
-#doneCancel {
+#done {
     /* width: 70px;
     height: 30px; */
     color: #ddd;
@@ -189,18 +235,44 @@ body {
     visibility: hidden;
     overflow: hidden;    
 }
-#doneCancel:hover {
+#done:hover {
     cursor: pointer;
 }
-#doneCancel #bottom_button {
+#done #bottom_button {
     border: 1px solid green;
     width: 80px;
     height: 40px;
 }
-#doneCancel #bottom_button ul li {
+#done #bottom_button ul li {
     position: relative;
     top:-17px;
     left:-10px;
+}
+
+.carList {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: 100;
+    top: 130px;
+    visibility: hidden;
+    background: #000;
+    color: #ddd;
+}
+.showCarList {
+    visibility: hidden;
+}
+#table tr {
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
+
+}
+#table td {
+    color: #ddd;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    padding: 5px;
 }
 /* #doneCancel #bottom_button ul {
     display: flex;
@@ -483,17 +555,25 @@ body {
         background: none;
         border: none;
     }
-    #doneCancel {
+    .carList {
+        height: 500px;
+    }
+    #done {
         position: absolute;
         top: 20px;
         right: 0px;
         font-size: 0.6em;        
-        width: 70px;
+        width: 60px;
         height:30px;
         
     }
-    #doneCancel #bottom_button ul li {
+    #done #bottom_button ul li {
         position: relative;
         top: -15px;
+    }
+    .popUp {
+        width: 250px;
+        position: absolute;
+        left: 60px;
     }
 }

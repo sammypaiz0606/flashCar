@@ -3,15 +3,23 @@ let lostEM_2 = document.querySelector('.lostEM_2');
 let page_1 = document.querySelector('.page_1');
 let resetButton = document.querySelector('.resetButton');
 let supportInfo = document.querySelector('.supportInfo');
-let loginBtn1 = document.querySelector('.loginBtn1');
-let carLog = document.querySelector('.carLog');
 let leftArrow = document.querySelector('.leftArrow');
 let bottom = document.querySelector('.bottom');
-let car_list = document.querySelector('.car_list');
+let car_List = document.querySelector('.car_List');
 let plusIcon = document.querySelector('.plusIcon');
 
-let doneCancel = document.getElementById('doneCancel');
-let support = document.getElementById('support');
+let done = document.getElementById('done');
+
+
+let loginBtn1 = document.querySelector('.loginBtn1');
+let carLog = document.querySelector('.carLog');
+let popUp = document.querySelector('.popUp');
+
+loginBtn1.addEventListener('click', ()=> {
+    carLog.classList.toggle('showCarLog');
+     // popUp.classList.toggle('showPopUp');
+    popUp.style.visibility = 'visible';
+});
 
 lostBtn_1.addEventListener('click', ()=> {
     lostEM_2.style.visibility = 'visible';
@@ -23,34 +31,53 @@ lostBtn_1.addEventListener('click', ()=> {
 resetButton.addEventListener('click', ()=> {
     lostEM_2.style.width = '0';
     page_1.style.visibility = 'visible';
-})
+});
+
+// Support section
+let support = document.getElementById('support');
 
 support.addEventListener('click', ()=> {
     supportInfo.classList.toggle('showSupport'); 
     // document.body.style.backgroundColor = '#000';
 });
 
-loginBtn1.addEventListener('click', ()=> {
-    carLog.classList.add('showCarLog');
-});
 
 leftArrow.addEventListener('click', ()=> {
     carLog.classList.remove('showCarLog');
-    console.log('left arrow');
-    car_list.style.visibility = 'hidden';
-});
-plusIcon.addEventListener('click', ()=> {
-    plusIcon.style.visibility = 'hidden';
-    car_list.style.visibility = 'visible';
-    doneCancel.style.visibility = 'visible';
-
+    car_List.style.visibility = 'hidden';
+    carList.classList.toggle('carList');
 });
 
+
+// Entry button
+let carList = document.querySelector('.carList');
+let entry = document.getElementById('entry');
+
+entry.addEventListener('click', ()=> {
+    car_List.style.visibility = 'visible'; 
+    popUp.style.visibility = 'hidden';
+    carList.style.visibility = 'hidden';
+});
+
+// Cancel button 
+let cancel = document.getElementById('cancel');
+
+cancel.addEventListener('click', () => {
+    popUp.style.visibility = 'hidden';
+});
+
+// New Table Car entry
 let table = document.querySelector('#table');
 let tableBody = '';
 
 
-doneCancel.addEventListener('click', ()=> {
+plusIcon.addEventListener('click', ()=> {
+    carList.style.visibility = 'visible';
+    // plusIcon.classList.toggle('showPlusIcon');
+    // plusIcon.style.visibility = 'visible';
+    // popUp.style.visibility = 'visible';
+    done.style.visibility = 'hidden';
+    car_List.style.visibility = 'visible';
     let nameInput   = document.querySelector('#nameInput').value;
     let carInput    = document.querySelector('#carInput').value;
     let modelInput  = document.querySelector('#modelInput').value;
