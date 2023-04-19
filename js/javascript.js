@@ -19,6 +19,7 @@ loginBtn1.addEventListener('click', ()=> {
     carLog.classList.toggle('showCarLog');
      // popUp.classList.toggle('showPopUp');
     popUp.style.visibility = 'visible';
+    popUp.style.height = '200px';
 });
 
 lostBtn_1.addEventListener('click', ()=> {
@@ -75,7 +76,7 @@ plusIcon.addEventListener('click', ()=> {
     carList.style.visibility = 'visible';
     // plusIcon.classList.toggle('showPlusIcon');
     // plusIcon.style.visibility = 'visible';
-    // popUp.style.visibility = 'visible';
+    popUp.style.visibility = 'hidden';
     done.style.visibility = 'hidden';
     car_List.style.visibility = 'visible';
     let nameInput   = document.querySelector('#nameInput').value;

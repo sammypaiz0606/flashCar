@@ -154,7 +154,7 @@ body {
 }
 .popUp {
     width: 350px;
-    height: 198px;
+    height: 10px;
     background: darkgrey;
     position: absolute;
     left: 25%;
@@ -163,6 +163,7 @@ body {
     overflow: hidden;
     border-radius: 25px;
     visibility: hidden;
+    transition: height 0.5s;
 
 }
 .popUp .popUp_1 {
@@ -274,22 +275,7 @@ body {
     top: 5px;
     padding: 5px;
 }
-/* #doneCancel #bottom_button ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    left: -20px;
-    
-}
-#doneCancel #bottom_button ul li {
-    border-bottom: 1px solid #000;
-    width: 200px;
-    height: 15px;
-    padding-left: 60px;
-    padding-bottom: 20px;
 
-} */
 #popUpDOne {
     position: relative;
     top: -5px;
