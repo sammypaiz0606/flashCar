@@ -229,12 +229,11 @@ body {
 
 .carList {
     width: 100%;
-    height: 550px;
     position: absolute;
     z-index: 100;
     top: 130px;
     visibility: hidden;
-    background: #000;
+    /* background: #000; */
     color: #ddd;
 }
 .showCarList {
@@ -452,8 +451,8 @@ body {
         width: 375px;
         z-index: 100;
         position: absolute;
-        bottom: -7px;
-    }
+        bottom: 0px;
+}
     .button {
         width: 352px;
         position: relative;
@@ -515,7 +514,7 @@ body {
     
     }
     .car_List .middleInfo ul li {
-        margin: 14px;
+        margin:5px 15px;
     }
     .car_list .middleInfo ul li input {
         width: 180px;
@@ -531,5 +530,8 @@ body {
         width: 250px;
         position: absolute;
         left: 60px;
+    }
+    .carList {
+        height: 300px;
     }
 }
