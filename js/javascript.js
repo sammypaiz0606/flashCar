@@ -20,6 +20,7 @@ loginBtn1.addEventListener('click', ()=> {
      // popUp.classList.toggle('showPopUp');
     popUp.style.visibility = 'visible';
     popUp.style.height = '200px';
+    supportInfo.classList.remove('showSupport'); 
 });
 
 lostBtn_1.addEventListener('click', ()=> {
@@ -27,6 +28,8 @@ lostBtn_1.addEventListener('click', ()=> {
     lostEM_2.style.width = '100%';
     page_1.style.visibility = 'hidden';
     console.log('hello');
+    supportInfo.classList.toggle('showSupport'); 
+
 });
 
 resetButton.addEventListener('click', ()=> {
@@ -46,7 +49,7 @@ support.addEventListener('click', ()=> {
 leftArrow.addEventListener('click', ()=> {
     carLog.classList.remove('showCarLog');
     car_List.style.visibility = 'hidden';
-    carList.classList.toggle('carList');
+    carList.classList.remove('carList');
     popUp.style.visibility = 'hidden';
 });
 

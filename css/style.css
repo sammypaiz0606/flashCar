@@ -215,39 +215,16 @@ body {
 }
 .car_List .middleInfo ul li input {
     width: 500px;
-    height: 40px;
+    height: 25px;
     position: relative;
     top: -5px;
-    left: 10px;
+    right: 0px;
+    margin: 10px;
+
     background: none;
     border: none;
     color: #ddd;
     font-size: 1em;
-}
-#done {
-    /* width: 70px;
-    height: 30px; */
-    color: #ddd;
-    font-size: 0.9em;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    /* background: rgba(221, 221, 221, 0.4); */
-    visibility: hidden;
-    overflow: hidden;    
-}
-#done:hover {
-    cursor: pointer;
-}
-#done #bottom_button {
-    border: 1px solid green;
-    width: 80px;
-    height: 40px;
-}
-#done #bottom_button ul li {
-    position: relative;
-    top:-17px;
-    left:-10px;
 }
 
 .carList {
@@ -533,8 +510,12 @@ body {
         font-size: 1em;
     
     }
+    .car_List .middleInfo ul li {
+        margin: 14px;
+    }
     .car_list .middleInfo ul li input {
         width: 180px;
+        height:30px;
         position: relative;
         top: -5px;
         left: 10px;
