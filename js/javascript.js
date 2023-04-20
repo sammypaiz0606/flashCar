@@ -47,6 +47,7 @@ leftArrow.addEventListener('click', ()=> {
     carLog.classList.remove('showCarLog');
     car_List.style.visibility = 'hidden';
     carList.classList.toggle('carList');
+    popUp.style.visibility = 'hidden';
 });
 
 
